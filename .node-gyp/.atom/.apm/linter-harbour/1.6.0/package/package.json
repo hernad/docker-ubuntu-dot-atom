@@ -1,0 +1,17 @@
+{
+  "name": "linter-harbour",
+  "linter-package": true,
+  "main": "./lib/init",
+  "version": "1.6.0",
+  "description": "Lint harbour, using harbour compiler",
+  "repository": "https://github.com/AtomLinter/linter-harbour",
+  "license": "MIT",
+  "engines": {
+    "atom": ">=0.110.0",
+    "node": ">= 0.10.0"
+  },
+  "dependencies": {
+    "shelljs": "^0.2.6",
+    "xregexp": "2.0.0"
+  }
+}

@@ -1,0 +1,16 @@
+# See https://atom.io/docs/latest/creating-a-package#menus for more details
+'context-menu':
+  '.overlayer':
+      'Enable language-harbour': 'language-harbour:toggle'
+
+'menu': [
+  {
+    'label': 'Packages'
+    'submenu': [
+      'label': 'language-harbour'
+      'submenu': [
+        { 'label': 'Toggle', 'command': 'language-harbour:toggle' }
+      ]
+    ]
+  }
+]

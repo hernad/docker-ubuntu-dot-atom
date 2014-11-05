@@ -1,0 +1,15 @@
+{
+  "name": "language-harbour",
+  "main": "./lib/language-harbour",
+  "version": "1.24.1",
+  "description": "harbour programming langugage",
+  "activationEvents": [
+    "language-harbour:toggle"
+  ],
+  "repository": "https://github.com/hernad/atom-language-harbour.git",
+  "license": "MIT",
+  "engines": {
+    "atom": ">0.50.0"
+  },
+  "dependencies": {}
+}

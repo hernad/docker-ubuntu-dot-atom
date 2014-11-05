@@ -1,0 +1,34 @@
+'.source.harbour':
+  'if_else_end':
+    'prefix': 'ife'
+    'body': 'IF ${1:condition}\n\t$2\nELSE\n\t$3\nENDIF'
+  'if_end':
+    'prefix': 'if'
+    'body': 'IF ${1:condition}\n\t$0\nENDIF'
+  'case_end':
+    'prefix': 'case'
+    'body': 'DO CASE\nCASE ${1:condition}\n$0\nCASE ${2:condition}\n$1\nOTHERWISE\n$3ENDCASE'
+  'switch':
+    'prefix': 'switch'
+    'body': 'SWITCH ${1:condition}\n   CASE ${2:value}\n   ${3:statement}\n   EXIT\nCASE ${4:value}\n   ${5:statement}\n   EXIT\nENDSWITCH\n'
+  'uglaste zagrade':
+    'prefix' : 'Zug'
+    'body': '[]'
+  'viticaste zagrade':
+    'prefix' : 'Zvit'
+    'body': '{}'
+  'backslash':
+    'prefix' : 'Bs'
+    'body': '\\'
+  'hash_hrec':
+    'prefix': 'hash'
+    'body': '${1:hRec}[ \'${2:key}\' ]${3: }'
+  'hash_hrec_assing':
+    'prefix': 'hasha'
+    'body': '${1:hRec}[ \'${2:key}\' ]${3: \:= }'
+  'f18_header':
+    'prefix': 'f18head'
+    'body': '/*\n * This file is part of the bring.out knowhow ERP, a free and open source\n * Enterprise Resource Planning software suite,\n * Copyright (c) 1994-2011 by bring.out doo Sarajevo.\n * It is licensed to you under the Common Public Attribution License\n * version 1.0, the full text of which (including FMK specific Exhibits)\n * is available in the file LICENSE_CPAL_bring.out_knowhow.md located at the\n * root directory of this source code archive.\n * By using this software, you agree to be bound by its terms.\n */\n\n#include \"f18.ch\"\n'
+  'f18 thread create dbf':
+    'prefix': 'f18thCreDbf'
+    'body': 'bFunctions := {| table_name, alias, aDbf | ;\n   create_dbf( table_name, aDbf ), ;\n   after_create_modstru( table_name ), ;\n   CREATE_INDEX( ${1:tag}, ${1:index}, alias );\n   }\nthread_create_modstru_index_dbf(  bFunctions, _table_name, _alias, aDbf )\n'

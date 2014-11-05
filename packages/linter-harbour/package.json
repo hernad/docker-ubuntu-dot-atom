@@ -1,0 +1,103 @@
+{
+  "name": "linter-harbour",
+  "linter-package": true,
+  "main": "./lib/init",
+  "version": "1.6.0",
+  "description": "Lint harbour, using harbour compiler",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/AtomLinter/linter-harbour"
+  },
+  "license": "MIT",
+  "engines": {
+    "atom": ">=0.110.0",
+    "node": ">= 0.10.0"
+  },
+  "dependencies": {
+    "shelljs": "^0.2.6",
+    "xregexp": "2.0.0"
+  },
+  "readme": "# linter-harbour\n\nThis package will lint your `.prg` opened files in Atom through harbour compiler\n\n",
+  "readmeFilename": "README.md",
+  "bugs": {
+    "url": "https://github.com/AtomLinter/linter-harbour/issues"
+  },
+  "homepage": "https://github.com/AtomLinter/linter-harbour",
+  "_id": "linter-harbour@1.6.0",
+  "dist": {
+    "shasum": "543bed747f709af4ac22df53f5f45978e4df1706"
+  },
+  "_resolved": "/tmp/d-114105-1495-1o0x3o1/package.tgz",
+  "_from": "/tmp/d-114105-1495-1o0x3o1/package.tgz",
+  "_atomModuleCache": {
+    "version": 1,
+    "dependencies": [
+      {
+        "name": "shelljs",
+        "version": "0.2.6",
+        "path": "node_modules/shelljs/shell.js"
+      },
+      {
+        "name": "xregexp",
+        "version": "2.0.0",
+        "path": "node_modules/xregexp/xregexp-all.js"
+      }
+    ],
+    "extensions": {
+      ".coffee": [
+        "lib/init.coffee",
+        "lib/linter-harbour.coffee"
+      ],
+      ".json": [
+        "node_modules/shelljs/.documentup.json",
+        "node_modules/shelljs/package.json",
+        "node_modules/xregexp/package.json",
+        "package.json"
+      ],
+      ".js": [
+        "node_modules/shelljs/global.js",
+        "node_modules/shelljs/make.js",
+        "node_modules/shelljs/scripts/generate-docs.js",
+        "node_modules/shelljs/scripts/run-tests.js",
+        "node_modules/shelljs/shell.js",
+        "node_modules/shelljs/src/cat.js",
+        "node_modules/shelljs/src/cd.js",
+        "node_modules/shelljs/src/chmod.js",
+        "node_modules/shelljs/src/common.js",
+        "node_modules/shelljs/src/cp.js",
+        "node_modules/shelljs/src/dirs.js",
+        "node_modules/shelljs/src/echo.js",
+        "node_modules/shelljs/src/error.js",
+        "node_modules/shelljs/src/exec.js",
+        "node_modules/shelljs/src/find.js",
+        "node_modules/shelljs/src/grep.js",
+        "node_modules/shelljs/src/ls.js",
+        "node_modules/shelljs/src/mkdir.js",
+        "node_modules/shelljs/src/mv.js",
+        "node_modules/shelljs/src/popd.js",
+        "node_modules/shelljs/src/pushd.js",
+        "node_modules/shelljs/src/pwd.js",
+        "node_modules/shelljs/src/rm.js",
+        "node_modules/shelljs/src/sed.js",
+        "node_modules/shelljs/src/tempdir.js",
+        "node_modules/shelljs/src/test.js",
+        "node_modules/shelljs/src/to.js",
+        "node_modules/shelljs/src/toEnd.js",
+        "node_modules/shelljs/src/which.js",
+        "node_modules/xregexp/xregexp-all.js"
+      ]
+    },
+    "folders": [
+      {
+        "paths": [
+          "lib",
+          ""
+        ],
+        "dependencies": {
+          "shelljs": "^0.2.6",
+          "xregexp": "2.0.0"
+        }
+      }
+    ]
+  }
+}
